@@ -1,0 +1,199 @@
+*{
+    font-family: 'Playfair Display', serif;
+    padding:0px 0px;
+    margin: 0px 0px;
+}
+
+h1,
+.title,
+.titledesc,
+.footer{
+    text-align: center;
+}
+
+nav {
+    font-size: 0.8em;
+    color:white;
+    background: #2d3945;
+    padding: 25px 0px;
+    text-transform: uppercase;
+}
+
+nav + div{
+    padding: 20px 25px;
+}
+
+h2 {
+    font-size: 1.2em ;
+    color: #2d3945;
+    font-weight:800;
+    padding-bottom: 10px;
+}
+
+p{
+    color: #b8bcc0;
+    font-size: 0.9em;
+    padding-bottom: 25px;
+}
+
+p + hr{
+    padding:1.5px 0px;
+    background:#2d3945;
+    border-color:#2d3945;
+    margin-bottom:5px;
+}
+
+hr{
+    background:#2d3945;
+    border-color:#2d3945;
+}
+
+form{
+    padding: 0px 25px;
+    text-align:left;
+}
+
+form > h2,
+.contact-title {
+    text-align: left;
+    padding:10px 0px;
+    margin-bottom:10px;
+}
+
+
+label{
+    color: #84929e;
+    padding: 0px 0px;
+    font-size: 0.9em;
+    float:left;
+    flex-basis: 50%;
+}
+
+.zipcode{
+    width:55%;
+    text-align: left;
+    margin: 10px 0px 20px 0px;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+    background: #eff0f1;
+    border: none;
+    border-radius: 5%;
+    color: #84929e;
+}
+
+input:focus {
+    outline:none;
+    color: #46698b;
+    text-align: left;
+    margin-left: 3px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    border:2px solid #46698b;
+}
+
+::placeholder{
+    font-size:0.9em;
+    color: #c8cbce;
+    text-align: right;
+    padding-right:10px;
+}
+
+label{
+    text-align:left;
+    padding-top: 0px;
+}
+
+/*Newsletter*/
+.newsletter {
+    padding: 20px 0px;
+}
+
+.newsletterdiv{
+    padding-left:10px;
+    text-align:left;
+}
+
+.custom-arrow::before,
+.custom-arrow::after{
+    content:'';
+    position: absolute
+}
+input[type~="checkbox"],
+input[type~="radio"]{
+    width:13px;
+    height: 13px;
+    padding: 3px 10px 3px 0px;
+    float:left;
+    margin: 3px 10px 0px 0px;
+    border: 10px;
+}
+[for$=news]{
+    vertical-align: text-top;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+#signup{
+    width:100%;
+    height: 50px;
+    border-style:none;
+    font-size: 1.1em;
+    font-weight:bold;
+    text-align: center;
+    border-radius: 5px;
+    color:white;
+    background-color: #4ebbb5;
+    margin: 10px 0px;
+}
+
+div + p{
+    margin: 10px 0px;
+    font-style:italic;
+    font-weight: lighter;
+}
+
+br+label{
+    margin: 10px 0px;
+}
+
+
+@media screen and (min-width: 768px){
+    nav + div{
+        padding: 20px 180px;
+    }
+
+    form{
+        padding: 0px 180px;
+        text-align:left;
+    }
+
+    .contact-info{
+    }
+    input{
+        width: 75%;
+        float:right;
+        height: 40px;
+    }
+
+    .zipcode{
+        margin: -20px 0px 20px 0px;
+    }
+
+    .hr2{
+        margin-top:50px;
+    }
+    label{
+        display:inline-block;
+        text-align: right;
+    }
+    
+}
