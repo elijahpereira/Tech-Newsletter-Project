@@ -64,7 +64,7 @@ form > h2,
 label{
     color: #84929e;
     padding: 0px 0px;
-    font-size: 0.9em;
+    font-size: 0.85em;
     float:left;
     flex-basis: 50%;
 }
@@ -109,6 +109,35 @@ label{
     padding-top: 0px;
 }
 
+.custom-arrow::before,
+.custom-arrow::after{
+    --size: .65em;
+
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-arrow::before{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size)  solid #2d3945;
+
+    top: 30%;
+}
+
+.custom-arrow::after{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size)  solid #2d3945;
+
+    top: 60%;
+}
+
 /*Newsletter*/
 .newsletter {
     padding: 20px 0px;
@@ -146,7 +175,7 @@ textarea{
     width:100%;
     height: 50px;
     border-style:none;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight:bold;
     text-align: center;
     border-radius: 5px;
@@ -166,34 +195,52 @@ br+label{
 }
 
 
-@media screen and (min-width: 768px){
-    nav + div{
-        padding: 20px 180px;
+@media screen and (min-width: 768px) {
+    nav+div {
+      padding: 20px 170px;
     }
 
-    form{
-        padding: 0px 180px;
-        text-align:left;
-    }
-
-    .contact-info{
-    }
-    input{
-        width: 75%;
-        float:right;
-        height: 40px;
-    }
-
-    .zipcode{
-        margin: -20px 0px 20px 0px;
-    }
-
-    .hr2{
-        margin-top:50px;
-    }
-    label{
-        display:inline-block;
-        text-align: right;
+    form {
+      max-width: 768px;
+      margin: 0px 170px;
+      padding: 0px 0;
     }
     
-}
+    label{
+        font-size: 0.75em;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .contact-info h2 {
+      flex-basis: 100%;
+    }
+
+    .contact-info label {
+      text-align: left;
+      flex-basis: 25%;
+    }
+
+    .contact-info input,
+    .contact-info select {
+      flex-basis: 75%;
+      height: 40px;
+    }
+
+    .hr2 {
+      margin-top: 40px;
+    }
+
+    h2 {
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .zipcode {
+      max-width: 25%;
+      margin: 10px 0;
+    }
+  }
