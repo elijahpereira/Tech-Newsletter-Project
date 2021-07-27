@@ -23,8 +23,8 @@
     </div>
     <!--Form Begining-->
     <form method="post">
-    <div class="contact-info">
-        <h2 class="contact-title">Contact Information</h2>
+    <fieldset class="contact-info">
+        <legend class="contact-title">Contact Information</legend>
         <label for="name">Full Name</label>
         <input type="text" id="name" name="user-name" placeholder="Required" class="input">
         <label for="email">Email Address</label>
@@ -107,10 +107,10 @@
         </select>
                <label for="zipcode">Zip Code</label><br><br>
                <input type="text" id="zipcode" name="zipcode" class="zipcode">
-        </div>
+        </fieldset>
         <hr class="hr2">
-        <h2 class="newsletter">Newsletter</h2>
-        <div class=newsletterdiv>
+        <legend class="newsletter">Newsletter</legend>
+        <fieldset class=newsletterdiv>
             <label>Select the newsletters you would like to receive</label> <br><br>
                 <input type="checkbox" id="htmlnews" name="htmlnews" value="HTML News">
                 <label for="htmlnews">HTML News</label><br>
@@ -126,7 +126,7 @@
                 <label for="other">Other topics you'd like to hear about</label>
                 <textarea id="other" name="user-other"></textarea><br>
                 <button type="submit" id="signup" value="Sign Up">Sign Up</button><br>
-        </div> 
+        </fieldset> 
         <p class="footer">Copyright The Code Review</p>
         
     </form>

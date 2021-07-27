@@ -23,11 +23,16 @@ nav + div{
     padding: 20px 25px;
 }
 
-h2 {
+h2,
+legend{
     font-size: 1.2em ;
     color: #2d3945;
     font-weight:800;
     padding-bottom: 10px;
+}
+
+fieldset{
+    border:none;
 }
 
 p{
@@ -54,6 +59,7 @@ form{
 }
 
 form > h2,
+form > legend,
 .contact-title {
     text-align: left;
     padding:10px 0px;
@@ -87,7 +93,9 @@ textarea{
     color: #84929e;
 }
 
-input:focus {
+input:focus,
+select:focus,
+textarea:focus {
     outline:none;
     color: #46698b;
     text-align: left;
@@ -216,7 +224,8 @@ br+label{
       align-items: center;
     }
 
-    .contact-info h2 {
+    .contact-info h2,
+    .contact-info legend {
       flex-basis: 100%;
     }
 
@@ -235,7 +244,7 @@ br+label{
       margin-top: 40px;
     }
 
-    h2 {
+    h2, legend {
         font-size: 1em;
         font-weight: 600;
     }
