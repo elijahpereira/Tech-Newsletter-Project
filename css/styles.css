@@ -227,7 +227,7 @@ br+label{
 
     .contact-info input,
     .contact-info select {
-      flex-basis: 75%;
+      flex-basis: 70%;
       height: 40px;
     }
 
