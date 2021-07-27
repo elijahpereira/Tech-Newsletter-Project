@@ -34,7 +34,7 @@
         <label for="address">Street Address</label>
         <input type="text" id="address" name="user-address" class="input">
         <label for="city">City</label>
-        <input type="text" id="City" name="user-city" class="input">
+        <input type="text" id="city" name="user-city" class="input">
         <label for="state">State</label>
         <select id="state" name="user-state" class="input">
                 <!--Options Sourced from https://www.freeformatter.com/usa-state-list-html-select.html-->
@@ -104,7 +104,6 @@
                 <option value="AA">Armed Forces Americas</option>
                 <option value="AP">Armed Forces Pacific</option>
                 <option value="AE">Armed Forces Others</option>
-                <span class="custom-arrow"></span>
         </select>
                <label for="zipcode">Zip Code</label><br><br>
                <input type="text" id="zipcode" name="zipcode" class="zipcode">
@@ -112,12 +111,12 @@
         <hr class="hr2">
         <h2 class="newsletter">Newsletter</h2>
         <div class=newsletterdiv>
-            <label for="newsletterdesc">Select the newsletters you would like to receive</label> <br><br>
+            <label>Select the newsletters you would like to receive</label> <br><br>
                 <input type="checkbox" id="htmlnews" name="htmlnews" value="HTML News">
                 <label for="htmlnews">HTML News</label><br>
-                <input type="checkbox" id="cssnews" name="" value="CSS News">
+                <input type="checkbox" id="cssnews" name="checkboxnews" value="CSS News">
                 <label for="cssnews">CSS News</label><br>
-                <input type="checkbox" id="javanews" name="" value="Javascript News">
+                <input type="checkbox" id="javanews" name="javanews" value="Javascript News">
                 <label for="javanews">Javascript News</label><br><br>
             <label class="Newsletter">Newsletter Format</label><br><br>
                 <input type="radio" id="html2news" name="letterformat" value="HTML">
@@ -126,7 +125,7 @@
                 <label for="plainnews">Plain text</label><br><br>
                 <label for="other">Other topics you'd like to hear about</label>
                 <textarea id="other" name="user-other"></textarea><br>
-                <button type="submit" id="signup" method="post" value="Sign Up">Sign Up</button><br>
+                <button type="submit" id="signup" value="Sign Up">Sign Up</button><br>
         </div> 
         <p class="footer">Copyright The Code Review</p>
         
